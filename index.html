@@ -1,60 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Портфолио Марина Симонова</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
-	</head>
-	<body>
-		<header>
-			<nav>
-				<a href="#about">Обо мне</a>
-				<a href="#skills">Мои навыки</a>
-				<a href="#book">Любимая книга</a>
-			</nav>
-		</header>
-		<div class="main">
-			<section class="hero">
-				<img src="./photo.jpg" alt="Личная аватарка" />
-				<h1 id="name">Марина Симонова</h1>
-			</section>
-			<section class="block" id="about">
-				<h2>Обо мне</h2>
-				<p>
-					Меня зовут Марина Симонова, я разработчик и энтузиаст технологий. Мне
-					нравится создавать эффективные и креативные решения для различных
-					задач. Я всегда стремлюсь улучшать свои навыки и делиться знаниями с
-					другими.
-				</p>
-			</section>
-			<section class="block skills" id="skills">
-				<h2>Мои навыки</h2>
-				<ul>
-					<li>
-						<strong>Технические навыки:</strong> Разработка на HTML, CSS, TypeScript
-					</li>
-					<li><strong>Мягкие навыки:</strong> Коммуникация, тайм-менеджмент</li>
-					<li><strong>Языки программирования:</strong> Python, C++, TypeScript</li>
-				</ul>
-			</section>
-			<section class="block book" id="book">
-				<h2>Моя любимая книга</h2>
-				<img src="https://via.placeholder.com/200" alt="Фото книги" />
-				<p><strong>Название:</strong> Название книги</p>
-				<p><strong>Автор:</strong> Название автора</p>
-				<p><strong>Год издания:</strong> Год издания</p>
-				<p>
-					<strong>Описание:</strong> Описание книги.
-				</p>
-				<p>
-					<strong>Почему мне нравится:</strong> Описание почему мне нравится эта книга.
-				</p>
-			</section>
-		</div>
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио — Марина Симонова</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Марина Симонова</div>
+        <nav class="nav">
+            <a href="#about">Обо мне</a>
+            <a href="#skills">Навыки</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <img src="images/photo.jpg" alt="Личная аватарка" />
+            <h1>Марина Симонова</h1>
+            <p class="hero-subtitle">IT-разработчик & студентка 3 курса КемГУ</p>
+        </section>
+
+        <section class="block" id="about">
+            <h2>Обо мне</h2>
+            <p>
+                Меня зовут Марина Симонова, я студентка 3 курса направления IT в КемГУ. 
+                Увлекаюсь веб-разработкой, создаю адаптивные интерфейсы, работаю с базами данных 
+                и пишу приложения на JavaScript и React. Стремлюсь создавать чистые, поддерживаемые 
+                и эффективные решения.
+            </p>
+        </section>
+
+        <section class="block skills" id="skills">
+            <h2>Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6+), React, TypeScript, BEM, Flexbox, Grid</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Инструменты & БД</h3>
+                    <p>Git, GitHub, VS Code, MongoDB, NoSQL, REST API</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Принципы разработки</h3>
+                    <p>SOLID, DRY, KISS, YAGNI, семантическая верстка</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="block portfolio" id="portfolio">
+            <h2>Примеры работ</h2>
+            <div class="portfolio-grid">
+                <article class="portfolio-card">
+                    <h3>IC GERALD REPAIR</h3>
+                    <p>Одностраничный лендинг для строительно-ремонтной компании. Семантическая верстка, модульный JS и CSS-переменные (DRY).</p>
+                    <a href="https://github.com/MarySim/Landing_page_layout" target="_blank" class="project-link">GitHub репозиторий →</a>
+                </article>
+                
+                <article class="portfolio-card">
+                    <h3>Веб-приложение поиска по ИНН</h3>
+                    <p>React-приложение для быстрой проверки и поиска информации по компаниям с авторизацией и выдачей результатов.</p>
+                    <a href="https://github.com/MarySim/scan-project" target="_blank" class="project-link">GitHub репозиторий →</a>
+                </article>
+
+                <article class="portfolio-card">
+                    <h3>Мой кинозал</h3>
+                    <p>SPA на чистом JS без фреймворков. Поиск, сортировка, фильтры, избранное в LocalStorage и отказоустойчивая загрузка API.</p>
+                    <a href="https://github.com/MarySim/movie-search-app" target="_blank" class="project-link">GitHub репозиторий →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="block contacts" id="contacts">
+            <h2>Контакты</h2>
+            <p><strong>Вуз:</strong> КемГУ, IT-направление (3 курс)</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/MarySim" target="_blank" style="color: #785873;">github.com/MarySim</a></p>
+            <p><strong>Telegram / Email:</strong> доступны по запросу в репозиториях</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Марина Симонова. Все права защищены.</p>
+        <div class="footer-links">
+            <a href="#about">Вверх</a>
+        </div>
+    </footer>
+</body>
 </html>
