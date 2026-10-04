@@ -1,0 +1,114 @@
+@font-face {
+	font-family: 'Leotaro Regular';
+	src: url('Leotaro-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	font-family: "Caveat", serif;
+	font-weight: 400;
+	font-style: normal;
+	background: #ddc5d6;
+	color: #333;
+}
+
+header {
+	background: #785873;
+	color: #fff;
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	gap: 20px;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	font-family: 'Leotaro Regular', serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+.main {
+	max-width: 1200px;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+.hero {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.hero img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+	margin-top: 20px;
+	font-size: 2.5em;
+	color: #333;
+	font-family: 'Leotaro Regular', serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.block {
+	background: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+}
+
+.block h2 {
+	font-size: 2.5em;
+	margin-bottom: 20px;
+	color: #785873;
+	font-family: 'Leotaro Regular', serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.block p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.skills ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.skills ul li {
+	font-size: 24px;
+    line-height: 1.6;
+	margin-bottom: 10px;
+}
+
+.book img {
+	max-width: 200px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.book p {
+	font-size: 24px;
+	line-height: 1.6;
+	margin: 0px;
+}
