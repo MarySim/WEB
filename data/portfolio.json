@@ -1,0 +1,17 @@
+[
+  {
+    "title": "IC GERALD REPAIR",
+    "description": "Одностраничный лендинг для строительно-ремонтной компании. Семантическая верстка, модульный JS и CSS-переменные (DRY).",
+    "link": "https://github.com/MarySim/Landing_page_layout"
+  },
+  {
+    "title": "Веб-приложение поиска по ИНН",
+    "description": "React-приложение для быстрой проверки и поиска информации по компаниям с авторизацией и выдачей результатов.",
+    "link": "https://github.com/MarySim/scan-project"
+  },
+  {
+    "title": "Мой кинозал",
+    "description": "SPA на чистом JS без фреймворков. Поиск, сортировка, фильтры, избранное в LocalStorage и отказоустойчивая загрузка API.",
+    "link": "https://github.com/MarySim/movie-search-app"
+  }
+]
